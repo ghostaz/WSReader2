@@ -8,7 +8,7 @@
     <key>ru</key>
     <value>WSReader 2.2 - Чтение Веб-сервисов</value>
   </synonym>
-  <comment>Автор Баданов Владимир Версия: 2.0.2.2</comment>
+  <comment>Автор Баданов Владимир Версия: 2.0.2.3</comment>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="f55442db-26b2-4ee2-93b4-c6afdd3db1aa"/>
   <defaultForm>ExternalDataProcessor.WSReader2.Form.Форма</defaultForm>
   <tabularSections uuid="ba73a99c-5825-4bc1-88ed-961e7db5c68a">
