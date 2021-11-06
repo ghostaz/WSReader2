@@ -1066,6 +1066,7 @@
           <verticalStretch>true</verticalStretch>
           <enableStartDrag>true</enableStartDrag>
           <enableDrag>true</enableDrag>
+          <fileDragMode>AsFileRef</fileDragMode>
           <searchStringLocation>None</searchStringLocation>
           <viewStatusLocation>None</viewStatusLocation>
           <searchControlLocation>None</searchControlLocation>
@@ -1484,6 +1485,7 @@
           <verticalStretch>true</verticalStretch>
           <enableStartDrag>true</enableStartDrag>
           <enableDrag>true</enableDrag>
+          <fileDragMode>AsFileRef</fileDragMode>
           <searchStringLocation>None</searchStringLocation>
           <viewStatusLocation>None</viewStatusLocation>
           <searchControlLocation>None</searchControlLocation>
@@ -1850,6 +1852,7 @@
           <verticalStretch>true</verticalStretch>
           <enableStartDrag>true</enableStartDrag>
           <enableDrag>true</enableDrag>
+          <fileDragMode>AsFileRef</fileDragMode>
           <searchStringLocation>None</searchStringLocation>
           <viewStatusLocation>None</viewStatusLocation>
           <searchControlLocation>None</searchControlLocation>
@@ -2308,6 +2311,7 @@
           <verticalStretch>true</verticalStretch>
           <enableStartDrag>true</enableStartDrag>
           <enableDrag>true</enableDrag>
+          <fileDragMode>AsFileRef</fileDragMode>
           <searchStringLocation>None</searchStringLocation>
           <viewStatusLocation>None</viewStatusLocation>
           <searchControlLocation>None</searchControlLocation>
@@ -2787,6 +2791,7 @@
           <verticalStretch>true</verticalStretch>
           <enableStartDrag>true</enableStartDrag>
           <enableDrag>true</enableDrag>
+          <fileDragMode>AsFileRef</fileDragMode>
           <searchStringLocation>None</searchStringLocation>
           <viewStatusLocation>None</viewStatusLocation>
           <searchControlLocation>None</searchControlLocation>
@@ -3296,6 +3301,7 @@
             <verticalStretch>true</verticalStretch>
             <enableStartDrag>true</enableStartDrag>
             <enableDrag>true</enableDrag>
+            <fileDragMode>AsFileRef</fileDragMode>
             <searchStringLocation>None</searchStringLocation>
             <viewStatusLocation>None</viewStatusLocation>
             <searchControlLocation>None</searchControlLocation>
@@ -4349,4 +4355,5 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
 </form:Form>

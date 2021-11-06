@@ -286,6 +286,7 @@
     <verticalStretch>true</verticalStretch>
     <enableStartDrag>true</enableStartDrag>
     <enableDrag>true</enableDrag>
+    <fileDragMode>AsFileRef</fileDragMode>
     <rowFilter xsi:type="core:UndefinedValue"/>
   </items>
   <autoCommandBar>
@@ -345,7 +346,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>ExternalDataProcessorObject.WSReader2</types>
+      <types>ExternalDataProcessor.WSReader2</types>
     </valueType>
     <view>
       <common>true</common>
@@ -444,4 +445,5 @@
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
+  <extInfo xsi:type="form:ObjectFormExtInfo"/>
 </form:Form>
