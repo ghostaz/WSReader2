@@ -2305,41 +2305,91 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаРезультат</name>
       <id>146</id>
-      <items xsi:type="form:Button">
-        <name>ВыполнитьОперацию</name>
-        <id>121</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ВыполнитьОперациюРасширеннаяПодсказка</name>
-          <id>266</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКоманды</name>
+        <id>285</id>
+        <items xsi:type="form:Button">
+          <name>ВыполнитьОперацию</name>
+          <id>121</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
-          <type>Label</type>
+          <extendedTooltip>
+            <name>ВыполнитьОперациюРасширеннаяПодсказка</name>
+            <id>266</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.ВыполнитьОперацию</commandName>
+          <representation>Auto</representation>
+          <defaultButton>true</defaultButton>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>Длительность</name>
+          <id>290</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Длительность</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ДлительностьРасширеннаяПодсказка</name>
+            <id>292</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДлительностьКонтекстноеМеню</name>
+            <id>291</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>LabelField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:LabelFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <format>
+              <key>ru</key>
+              <value>ЧН='0 мс'; ЧФ='Ч мс'</value>
+            </format>
           </extInfo>
-        </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Command.ВыполнитьОперацию</commandName>
-        <representation>Auto</representation>
-        <defaultButton>true</defaultButton>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
-      <items xsi:type="form:FormGroup">
-        <name>ГруппаДерево</name>
-        <id>157</id>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -2347,15 +2397,11 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Группа дерево</value>
+          <value>Группа команды</value>
         </title>
-        <toolTip>
-          <key>ru</key>
-          <value>Группа дерево</value>
-        </toolTip>
         <extendedTooltip>
-          <name>ГруппаДеревоРасширеннаяПодсказка</name>
-          <id>267</id>
+          <name>ГруппаКомандыРасширеннаяПодсказка</name>
+          <id>286</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -2370,13 +2416,11 @@
         </extendedTooltip>
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
-          <group>Vertical</group>
-          <representation>WeakSeparation</representation>
+          <group>HorizontalIfPossible</group>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>
-          <showTitle>true</showTitle>
           <throughAlign>Auto</throughAlign>
-          <currentRowUse>DontUse</currentRowUse>
+          <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -3686,6 +3730,26 @@
         <common>true</common>
       </edit>
     </columns>
+  </attributes>
+  <attributes>
+    <name>Длительность</name>
+    <title>
+      <key>ru</key>
+      <value>Длительность</value>
+    </title>
+    <id>18</id>
+    <valueType>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
   </attributes>
   <formCommands>
     <name>ПолучитьWSDL</name>
